@@ -15,8 +15,11 @@ header{
 /* Styling for the etch a sketch */
 main{
     height: 50vh;
-    width: 80%;
+    width: 40%;
     display: flex;
+    flex-wrap: wrap;
+    flex-basis: 0;
+    align-content: center;
     margin: auto;
     background-color: darksalmon;
 }

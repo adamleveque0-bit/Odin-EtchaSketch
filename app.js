@@ -11,7 +11,7 @@ function CreatePad(padsize){
     if(padsize >= padMax){
         alert(`your pad is too big please enter a pad size below ${padMax} `);
     }else{
-        for(let i = 0; i < padsize; i++){
+        for(let i = 0; i < padsize * 2; i++){
             let newDiv = document.createElement("div");
             pad.appendChild(newDiv);
             
@@ -21,3 +21,7 @@ function CreatePad(padsize){
 }
 
 CreatePad(getPadSize);
+let padDiv = document.querySelectorAll("main div");
+
+    
+
