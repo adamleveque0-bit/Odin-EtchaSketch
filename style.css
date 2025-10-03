@@ -1,0 +1,27 @@
+/*basic remove default styling*/
+*{
+    margin: 0;
+    padding: 0;
+
+    border: none;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+/* Styling for the etch a sketch */
+main{
+    height: 50vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    background-color: darksalmon;
+}
+main div{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+}
