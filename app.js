@@ -1,5 +1,5 @@
 const pad = document.querySelector("main");
-const padMax = 600;
+const padMax = 101;
 
 let getPadSize = prompt(parseInt,"what size do you want your pad?");
 //console.log(getPadSize);
@@ -11,7 +11,7 @@ function CreatePad(padsize){
     if(padsize >= padMax){
         alert(`your pad is too big please enter a pad size below ${padMax} `);
     }else{
-        for(let i = 0; i < padsize * 2; i++){
+        for(let i = 0; i < padsize * padsize / 2; i++){
             let newDiv = document.createElement("div");
             pad.appendChild(newDiv);
             
@@ -22,6 +22,14 @@ function CreatePad(padsize){
 
 CreatePad(getPadSize);
 let padDiv = document.querySelectorAll("main div");
+console.log(padDiv);
+
+for(let i = 0; i < padDiv.length; i++){
+    padDiv[i].addEventListener("mouseover", ()=>{
+        event.target.style.backgroundColor = "black";
+    });
+    
+}
 
     
 
